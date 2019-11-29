@@ -108,6 +108,26 @@ input[type="submit"] {
     opacity: 1;
 }
 
+.phone {
+    display: inline-block;
+}
+
+#country {
+    width: 15rem;
+    height: 5rem;
+    background: #00c4c4;
+    opacity: .5;
+    border: 0;
+    padding-left: 10px;
+    color: #fff;
+    font-size: 1.7rem;
+}
+
+#phone {
+    width: calc(50rem - 15rem - .5rem);
+}
+
+
 textarea {
     resize: none;
 }
@@ -133,6 +153,8 @@ textarea::placeholder {
 }
 
 
+#country:active,
+#country:focus,
 input:active,
 input:focus,
 textarea:active,
@@ -141,6 +163,11 @@ textarea:focus {
     opacity: 1;
     border-left: .5rem solid #355b82;
     color: white;
+}
+
+#phone:active,
+#phone:focus {
+    border-left: none;
 }
 
 input[type="submit"]:hover,
